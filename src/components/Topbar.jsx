@@ -5,7 +5,7 @@ export default function Topbar() {
   return (
     <div className="p-3 h-12 bg-smBlue flex  items-center w-full mx-auto">
       <div className="left flex-3">
-        <div className="logo text-white text-xl">The Social Network</div>
+        <div className="logo text-white text-xl ">The Social Network</div>
       </div>
       <div className="center  flex-5">
         <div className="search h-7 flex items-center bg-white w-full rounded-2xl">
