@@ -1,11 +1,11 @@
 import { Person, Chat, Notifications, Search } from "@mui/icons-material";
-import signoutImg from "../assets/person/1.jpeg";
+import signoutImg from "../../assets/person/1.jpeg";
 
 export default function Topbar() {
   return (
-    <div className="p-3 h-12 bg-smBlue flex  items-center w-full mx-auto">
+    <div className="p-3 h-12 bg-smBlue flex  items-center w-full sticky top-0">
       <div className="left flex-3">
-        <div className="logo text-white text-xl cursor-pointer hover:text-slate-200">
+        <div className="logo m-1 text-white text-xl font-bold cursor-pointer hover:text-slate-200">
           The Social Network
         </div>
       </div>
