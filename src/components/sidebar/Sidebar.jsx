@@ -53,7 +53,9 @@ export default function Sidebar() {
             <span className="sidebarListItemText ml-4">Courses</span>
           </li>
         </ul>
-        <button className="w-4/6 p-2 h-fit bg-gray-200">Show more</button>
+        <button className="cursor-pointer w-4/6 p-2 h-fit bg-gray-200">
+          Show more
+        </button>
         <hr className="w-full mt-6 mb-6" />
         <ul className="sidebarFriendList">
           <li className="sidebarFriend mb-4 flex items-center">
