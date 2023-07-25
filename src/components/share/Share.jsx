@@ -23,20 +23,41 @@ export default function Share() {
           <div className="lowerHalf flex justify-between pl-3 pr-3 items-center">
             <div className="options flex justify-around w-4/5">
               <div className="option cursor-pointer">
-                <PermMedia className="optionIcon text-orange-500" />
-                <span className="optionText">Photo or Video</span>
+                <PermMedia className="optionIcon text-lg text-orange-500" />
+                <span
+                  className="optionText text-sm"
+                  style={{ fontWeight: 500 }}
+                >
+                  {" "}
+                  Photo or Video
+                </span>
               </div>
               <div className="option cursor-pointer">
-                <Label className="optionIcon text-blue-600" />
-                <span className="optionText">Tag</span>
+                <Label className="optionIcon text-lg text-blue-600" />
+                <span
+                  className="optionText text-sm"
+                  style={{ fontWeight: 500 }}
+                >
+                  Tag
+                </span>
               </div>
               <div className="option cursor-pointer">
-                <Room className="optionIcon  text-red-600" />
-                <span className="optionText">Location</span>
+                <Room className="optionIcon text-lg  text-red-600" />
+                <span
+                  className="optionText text-sm"
+                  style={{ fontWeight: 500 }}
+                >
+                  Location
+                </span>
               </div>
               <div className="option cursor-pointer">
-                <EmojiEmotions className="optionIcon text-[#daa520]" />
-                <span className="optionText">Feelings</span>
+                <EmojiEmotions className="optionIcon text-lg text-[#daa520]" />
+                <span
+                  className="optionText text-sm"
+                  style={{ fontWeight: 500 }}
+                >
+                  Feelings
+                </span>
               </div>
             </div>
             <div className="share">
