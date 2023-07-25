@@ -53,11 +53,11 @@ export default function Topbar() {
             </span>
           </div>
         </div>
-        <div className="signout">
+        <div className="signout flex-none">
           <img
             src={signoutImg}
             alt="user Image"
-            className="rounded-full w-8 h-8 object-cover cursor-pointer"
+            className="rounded-full w-[32px] h-[32px] object-cover cursor-pointer"
           />
         </div>
       </div>
