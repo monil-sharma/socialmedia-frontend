@@ -1,6 +1,6 @@
 export default function Online(props) {
   const user = props.user;
-  console.log(user);
+
   return (
     <li className="friend flex items-center mb-2">
       <div className="imgContainer flex items-center relative">

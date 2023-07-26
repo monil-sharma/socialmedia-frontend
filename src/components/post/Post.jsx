@@ -1,11 +1,17 @@
 import { MoreVert } from "@mui/icons-material";
 import { Users } from "../../dummyData";
+import { useState } from "react";
 
 export default function Post(props) {
   const post = props.post;
 
-  // console.log(post);
-  // console.log("1");
+  const [like, setLike] = useState(post.like);
+  const [isLiked, setIsLiked] = useState(false);
+
+  const likeHandler = () => {
+    setLike(isLiked ? like - 1 : like + 1);
+    setIsLiked(!isLiked);
+  };
 
   const currUser = Users.filter((user) => {
     return user.id === post?.userID;
@@ -50,13 +56,15 @@ export default function Post(props) {
                 src="assets/like.png"
                 alt=""
                 className="rounded-full h-6 w-6 mr-1 object-cover cursor-pointer"
+                onClick={likeHandler}
               />
               <img
                 src="assets/heart.png"
                 alt=""
                 className="rounded-full h-6 w-6 mr-1 object-cover cursor-pointer"
+                onClick={likeHandler}
               />
-              <span className="text-sm">{post.like} people liked this</span>
+              <span className="text-sm">{like} people liked this</span>
             </div>
             <div className="bottomRight">
               <span className="border-b border-dashed cursor-pointer border-gray-600 text-sm">
