@@ -9,11 +9,11 @@ import {
   Event,
   School,
 } from "@mui/icons-material";
-import friendImg from "../../assets/person/2.jpeg";
+
 import "./sidebar.css";
 export default function Sidebar() {
   return (
-    <div className="overflow-y-scroll flex-3 h-[calc(100vh-3rem)]">
+    <div className="overflow-y-scroll flex-3 h-[calc(100vh-3rem)] sticky top-[3rem]">
       <div className="sidebarWrapper p-5">
         <ul className="sidebarList m-0 p-0">
           <li className="sidebarListItem flex items-center mb-5">
@@ -60,7 +60,7 @@ export default function Sidebar() {
         <ul className="sidebarFriendList">
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -68,7 +68,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -76,7 +76,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -84,7 +84,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -92,7 +92,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -100,7 +100,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -108,7 +108,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -116,7 +116,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -124,7 +124,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -132,7 +132,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -140,7 +140,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />
@@ -148,7 +148,7 @@ export default function Sidebar() {
           </li>
           <li className="sidebarFriend mb-4 flex items-center">
             <img
-              src={friendImg}
+              src="assets/person/2.jpeg"
               alt=""
               className="sideBarFriendImg rounded-full object-cover h-8 w-8"
             />

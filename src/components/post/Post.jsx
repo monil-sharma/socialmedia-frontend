@@ -1,10 +1,18 @@
-import userImg from "../../assets/person/1.jpeg";
-import postImg from "../../assets/post/1.jpeg";
-import like from "../../assets/like.png";
-import heart from "../../assets/heart.png";
 import { MoreVert } from "@mui/icons-material";
+import { Users } from "../../dummyData";
 
-export default function Post() {
+export default function Post(props) {
+  const post = props.post;
+
+  // console.log(post);
+  // console.log("1");
+
+  const currUser = Users.filter((user) => {
+    return user.id === post?.userID;
+  });
+
+  console.log(currUser[0].username);
+
   return (
     <div className="post">
       <div className="postWrapper p-5">
@@ -12,7 +20,7 @@ export default function Post() {
           <div className="postTop flex justify-between mb-3">
             <div className="topLeft flex items-center">
               <img
-                src={userImg}
+                src={currUser[0].profilePicture}
                 className="dp rounded-full w-8 h-8 object-cover"
                 alt=""
               />
@@ -20,18 +28,18 @@ export default function Post() {
                 className="postUsername ml-2 text-sm"
                 style={{ fontWeight: 500 }}
               >
-                Dummy User
+                {currUser[0].username}
               </span>
-              <span className="postDate text-xs ml-2">6 mins ago</span>
+              <span className="postDate text-xs ml-2">{post.date}</span>
             </div>
             <div className="topRight flex items-center">
               <MoreVert className="cursor-pointer" />
             </div>
           </div>
           <div className="postCenter">
-            <span>A random post</span>
+            <span>{post?.desc}</span>
             <img
-              src={postImg}
+              src={post.photo}
               alt=""
               className="w-full max-h-[500px] object-contain"
             />
@@ -39,20 +47,20 @@ export default function Post() {
           <div className="postBottom mt-3 flex justify-between items-center">
             <div className="bottomLeft flex items-center">
               <img
-                src={like}
+                src="assets/like.png"
                 alt=""
                 className="rounded-full h-6 w-6 mr-1 object-cover cursor-pointer"
               />
               <img
-                src={heart}
+                src="assets/heart.png"
                 alt=""
                 className="rounded-full h-6 w-6 mr-1 object-cover cursor-pointer"
               />
-              <span className="text-sm">69 people liked this</span>
+              <span className="text-sm">{post.like} people liked this</span>
             </div>
             <div className="bottomRight">
               <span className="border-b border-dashed cursor-pointer border-gray-600 text-sm">
-                11 comments
+                {post.comment} comments
               </span>
             </div>
           </div>

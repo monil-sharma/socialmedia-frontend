@@ -1,4 +1,3 @@
-import userIMG from "../../assets/person/1.jpeg";
 import { PermMedia, Label, Room, EmojiEmotions } from "@mui/icons-material";
 export default function Share() {
   return (
@@ -7,7 +6,7 @@ export default function Share() {
         <div className="shadow-[0_0_16px_-8px_rgba(0,0,0,0.68)] rounded-md w-full p-2 pb-8">
           <div className="upperHalf flex">
             <img
-              src={userIMG}
+              src="assets/person/1.jpeg"
               alt=""
               className="rounded-full mr-2 w-12 h-12 object-cover"
             />

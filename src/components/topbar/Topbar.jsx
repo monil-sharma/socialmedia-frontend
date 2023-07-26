@@ -1,5 +1,4 @@
 import { Person, Chat, Notifications, Search } from "@mui/icons-material";
-import signoutImg from "../../assets/person/1.jpeg";
 
 export default function Topbar() {
   return (
@@ -55,7 +54,7 @@ export default function Topbar() {
         </div>
         <div className="signout flex-none">
           <img
-            src={signoutImg}
+            src="assets/person/1.jpeg"
             alt="user Image"
             className="rounded-full w-[32px] h-[32px] object-cover cursor-pointer"
           />

@@ -1,20 +1,19 @@
-import birthdayImg from "../../assets/gift.png";
-import adImg from "../../assets/ad.png";
-import friendImg from "../../assets/person/3.jpeg";
-import friendImg1 from "../../assets/person/4.jpeg";
-import friendImg2 from "../../assets/person/5.jpeg";
 export default function Rightbar() {
   return (
-    <div className="flex-4">
+    <div className="flex-4 z-[-999]">
       <div className="rightbarWrapper p-5 pl-0">
         <div className="p-2">
           <div className="birthday flex items-center">
-            <img src={birthdayImg} alt="" className="h-10 w-10" />
+            <img src="assets/gift.png" alt="" className="h-10 w-10" />
             <span className="text-sm" style={{ fontWeight: 300 }}>
               <b>Steve Rogers</b> and <b>4 others</b> have birthday today.
             </span>
           </div>
-          <img src={adImg} alt="" className="ad rounded-md w-full mt-5" />
+          <img
+            src="assets/ad.png"
+            alt=""
+            className="ad rounded-md w-full mt-5"
+          />
 
           <h4 className="mt-5" style={{ fontWeight: 600 }}>
             Online Friends
@@ -23,7 +22,7 @@ export default function Rightbar() {
             <li className="friend flex items-center mb-2">
               <div className="imgContainer flex items-center relative">
                 <img
-                  src={friendImg}
+                  src="assets/person/3.jpeg"
                   alt=""
                   className="h-10 w-10 rounded-full object-cover"
                 />
@@ -36,7 +35,7 @@ export default function Rightbar() {
             <li className="friend flex items-center mb-2">
               <div className="imgContainer flex items-center relative">
                 <img
-                  src={friendImg1}
+                  src="assets/person/4.jpeg"
                   alt=""
                   className="h-10 w-10 rounded-full object-cover"
                 />
@@ -49,7 +48,7 @@ export default function Rightbar() {
             <li className="friend flex items-center mb-2">
               <div className="imgContainer flex items-center relative">
                 <img
-                  src={friendImg2}
+                  src="assets/person/5.jpeg"
                   alt=""
                   className="h-10 w-10 rounded-full object-cover"
                 />
