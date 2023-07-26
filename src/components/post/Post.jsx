@@ -11,7 +11,7 @@ export default function Post(props) {
     return user.id === post?.userID;
   });
 
-  console.log(currUser[0].username);
+  // console.log(currUser[0].username);
 
   return (
     <div className="post">

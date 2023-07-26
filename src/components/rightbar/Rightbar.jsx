@@ -1,3 +1,5 @@
+import Online from "../online/Online";
+import { Users } from "../../dummyData.jsx";
 export default function Rightbar() {
   return (
     <div className="flex-4 z-[-999]">
@@ -19,45 +21,9 @@ export default function Rightbar() {
             Online Friends
           </h4>
           <ul className="friendlist p-0 m-0 mt-1">
-            <li className="friend flex items-center mb-2">
-              <div className="imgContainer flex items-center relative">
-                <img
-                  src="assets/person/3.jpeg"
-                  alt=""
-                  className="h-10 w-10 rounded-full object-cover"
-                />
-                <span className="w-3 h-3 bg-green-600 rounded-full absolute right-0 top-[-2px]"></span>
-              </div>
-              <span className="ml-2" style={{ fontWeight: 500 }}>
-                Wakanda Forever
-              </span>
-            </li>
-            <li className="friend flex items-center mb-2">
-              <div className="imgContainer flex items-center relative">
-                <img
-                  src="assets/person/4.jpeg"
-                  alt=""
-                  className="h-10 w-10 rounded-full object-cover"
-                />
-                <span className="w-3 h-3 bg-green-600 rounded-full absolute right-0 top-[-2px]"></span>
-              </div>
-              <span className="ml-2" style={{ fontWeight: 500 }}>
-                BTS
-              </span>
-            </li>
-            <li className="friend flex items-center mb-2">
-              <div className="imgContainer flex items-center relative">
-                <img
-                  src="assets/person/5.jpeg"
-                  alt=""
-                  className="h-10 w-10 rounded-full object-cover"
-                />
-                <span className="w-3 h-3 bg-green-600 rounded-full absolute right-0 top-[-2px]"></span>
-              </div>
-              <span className="ml-2" style={{ fontWeight: 500 }}>
-                Brunette Model
-              </span>
-            </li>
+            {Users.map((user) => {
+              return <Online key={user.id} user={user} />;
+            })}
           </ul>
         </div>
       </div>

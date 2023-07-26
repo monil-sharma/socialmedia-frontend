@@ -9,8 +9,10 @@ import {
   Event,
   School,
 } from "@mui/icons-material";
-
 import "./sidebar.css";
+import { Users } from "../../dummyData";
+import CloseFriends from "../closeFriends/CloseFriends";
+
 export default function Sidebar() {
   return (
     <div className="overflow-y-scroll flex-3 h-[calc(100vh-3rem)] sticky top-[3rem]">
@@ -58,102 +60,9 @@ export default function Sidebar() {
         </button>
         <hr className="w-full mt-6 mb-6" />
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend mb-4 flex items-center">
-            <img
-              src="assets/person/2.jpeg"
-              alt=""
-              className="sideBarFriendImg rounded-full object-cover h-8 w-8"
-            />
-            <span className="sidebarFriendName ml-2">Jane Doe</span>
-          </li>
+          {Users.map((user) => {
+            return <CloseFriends key={user.id} user={user} />;
+          })}
         </ul>
       </div>
     </div>
