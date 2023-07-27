@@ -1,7 +1,7 @@
 import Online from "../online/Online";
 import { Users } from "../../dummyData.jsx";
 export default function Rightbar({ profile }) {
-  console.log(profile);
+  // console.log(props);
 
   const HomeRightbar = () => {
     return (
@@ -12,7 +12,11 @@ export default function Rightbar({ profile }) {
             <b>Steve Rogers</b> and <b>4 others</b> have birthday today.
           </span>
         </div>
-        <img src="assets/ad.png" alt="" className="ad rounded-md w-full mt-5" />
+        <img
+          src="assets/adv.png"
+          alt=""
+          className="ad rounded-md w-full mt-5"
+        />
 
         <h4 className="mt-5" style={{ fontWeight: 600 }}>
           Online Friends
@@ -129,7 +133,7 @@ export default function Rightbar({ profile }) {
       <div className="rightbarWrapper p-5 pl-0">
         <div className="p-2">
           {/* <HomeRightbar /> */}
-          <ProfileRightbar />
+          {profile ? <ProfileRightbar /> : <HomeRightbar />}
         </div>
       </div>
     </div>

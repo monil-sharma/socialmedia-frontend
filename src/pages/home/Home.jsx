@@ -11,7 +11,7 @@ export default function Home() {
         {/* <div>Home Page</div> */}
         <Sidebar />
         <Feed />
-        <Rightbar profile />
+        <Rightbar />
       </div>
     </>
   );
