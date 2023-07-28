@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         smBlue: "#1877f2",
+        logBlue: "#1775ee",
       },
       flex: {
         2: "2 2 0%",
